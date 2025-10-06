@@ -1,0 +1,131 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f4f1;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #2d2a26, #4b3b2e);
+}
+
+.navbar-brand {
+  color: #d1a054 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #f8f4f1 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d1a054 !important;
+}
+
+/* ====== HERO ====== */
+header.hero {
+  background: linear-gradient(rgba(45,42,38,0.8), rgba(45,42,38,0.8)), 
+              url('cafe.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  padding: 120px 20px;
+}
+
+header.hero h1 span {
+  color: #d1a054;
+}
+
+header.hero .btn {
+  background-color: #d1a054;
+  border: none;
+  transition: 0.3s;
+}
+
+header.hero .btn:hover {
+  background-color: #b3853f;
+  transform: scale(1.05);
+}
+
+/* ====== TARJETAS DE PRODUCTOS ====== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ====== SECCIONES ====== */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  color: #4b3b2e;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #2d2a26;
+  color: #f8f4f1;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* ====== FORMULARIO CONTACTO ====== */
+form {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+form .btn {
+  background: #4b3b2e;
+  color: #fff;
+  border: none;
+}
+
+form .btn:hover {
+  background: #d1a054;
+}
+
+/* ====== GALERÍA ====== */
+.galeria-img {
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.galeria-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ====== ANIMACIÓN FADE ====== */
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
